@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/claude_hooks/post_tool_use_pii_redact.py\""
+          }
+        ]
+      }
+    ]
+  }
+}
